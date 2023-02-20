@@ -10,6 +10,9 @@ namespace TestTaskHardcode.Services
                   
 
         private readonly DataBaseContext _context;
+        //тут также должен быть сервис для работы с CategoryToAtribute, 
+        //который выдавал бы коллекцию аттрибутов для записывания их в объекты ProductAttribute при создании объекта 
+        //класса Product
         public ProductsService(DataBaseContext context)
         {
             _context = context;

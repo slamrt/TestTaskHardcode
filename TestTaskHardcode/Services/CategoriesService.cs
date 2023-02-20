@@ -7,6 +7,9 @@ namespace TestTaskHardcode.Services
     public class CategoriesService : ICategoriesService
     {
         private readonly DataBaseContext _context;
+        //тут нам также понадобился бы сервис для работы с классом AttributeType,
+        //который выдавал бы коллекцию атрибутов для конкретной категории.
+        //Затем создавали бы коллекцию объектов типа CategoryToAttribute для создания объекта класса Product
         public CategoriesService(DataBaseContext context)
         {
             _context = context;
